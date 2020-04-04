@@ -22,20 +22,26 @@ function Header() {
         <Nav className="ml-auto" navbar>
           {context.user ? (
             <NavItem>
-              <NavLink tag={Link} to="/" className="text-white">
+              <NavLink
+                onClick={() => {
+                  context.setUser(null);
+                }}
+                to="/"
+                className="text-white"
+              >
                 Logout
               </NavLink>
             </NavItem>
           ) : (
             <>
               <NavItem>
-                <NavLink tag={Link} to="/" className="text-white">
+                <NavLink tag={Link} to="/signup" className="text-white">
                   Signup
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/" className="text-white">
-                  Signip
+                <NavLink tag={Link} to="/signin" className="text-white">
+                  Sigin
                 </NavLink>
               </NavItem>
             </>
