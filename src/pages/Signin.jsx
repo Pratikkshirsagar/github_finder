@@ -27,10 +27,11 @@ function Signin() {
   const handleSignUp = () => {
     firebase
       .auth()
-      .createUserWithEmailAndPassword(email, password)
+      .signInWithEmailAndPassword(email, password)
       .then((res) => {
         console.log(res);
         context.setUser({ email: res.user.email, uid: res.user.uid });
+        toast.success(`Welcome ${res.user.email}`);
       })
       .catch((err) => {
         console.log(err);
