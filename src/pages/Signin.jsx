@@ -55,7 +55,7 @@ function Signin() {
           <Col lg={6} className="offset-lg-3 mt-5">
             <Card>
               <Form onSubmit={handleFormSubmit}>
-                <CardHeader className="">SignUp here</CardHeader>
+                <CardHeader className="">SignIn here</CardHeader>
                 <CardBody>
                   <FormGroup row>
                     <Label for="email" sm={3}>
