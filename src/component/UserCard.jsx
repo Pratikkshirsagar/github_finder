@@ -9,7 +9,7 @@ const UserCard = ({ user }) => {
         <div className="text-primary">{user.name}</div>
         <div className="text-primary">{user.location}</div>
         <div className="text-primary">{user.bio}</div>
-        <div className="text-info">Available for hier: {user.hireable ? 'YES' : 'NOPE'}</div>
+        <div className="text-info">Available for hiering: {user.hireable ? 'YES' : 'NOPE'}</div>
         <div className="text-info">Followers: {user.followers}</div>
       </CardBody>
     </Card>
