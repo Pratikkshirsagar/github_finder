@@ -23,6 +23,12 @@ const Home = () => {
     }
   };
 
+  //PUT ANYTHING BEHIND LOGIN
+
+  if (!context.user?.uid) {
+    return <Redirect to="/signin" />;
+  }
+
   return (
     <Container>
       <Row className=" mt-3">
